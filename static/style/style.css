@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+
+
+/* constant variables */
+:root{
+    --tan-background: #FFF6E8;
+    --red-text: #800000;
+    --header-font-family: "DM Serif Display";
+    --body-font-family: "Libre Baskerville";
+    --text-overlay-font-family: "Lato";
+    --line-width: .1vw;
+}
+
+/* -------- Global Styles ----------*/
+html{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: var(--header-font-family);
+    color: var(--red-text);
+    font-size: 8vw;   
+}
+h3{
+    font-size: 2.5vw;
+}
+
+/* ---------- logo header ---------- */
+header.logo-header{
+    background-color: var(--tan-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    position: relative;
+}
+.logo-header img{
+    width: 10%;
+    padding: 2rem;
+}
+
+/* ---------- cover ---------- */
+.cover-header{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.cover-header .header-img-container img{
+    width: 100%;
+}
+.cover-header .header-content{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+}
+.cover-header h1{
+    text-shadow: 0.4vw .3vw .6vw rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 0.07vw;
+    -webkit-text-stroke-color: #FFF;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;  
+    letter-spacing: 0.3vw;
+    color: #660000;
+}
+.cover-header h2, .cover-header h3{
+    font-family: var(--header-font-family);
+    color: black;
+    font-weight: 400;
+    letter-spacing: .3vw;;
+    margin: 0;
+}
+
+/* lines in header */
+.lines-header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 1vw;
+}
+div.lines-left, div.lines-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+.line-1, .line-2{
+    border: none;
+    height: var(--line-width);
+    background-color: black;
+    margin: 0;
+}
+/* lengths for left side */
+.lines-left .line-1 { width: 5vw;}
+.lines-left .line-2 { width: 10vw; }
+
+/* lengths for right side */
+.lines-right .line-1 { width: 5vw; }
+.lines-right .line-2 { width: 10vw; }
+
+.lines-left{
+    align-items: flex-end;
+}

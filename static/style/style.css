@@ -25,10 +25,18 @@ body{
 h1{
     font-family: var(--header-font-family);
     color: var(--red-text);
-    font-size: 8vw;   
+    font-size: 8vw; 
+    letter-spacing: 0.3vw;  
 }
 h3{
     font-size: 2.5vw;
+    letter-spacing: .3vw;;
+
+}
+h2{
+    font-size: 4vw;
+    letter-spacing: .3vw;;
+
 }
 
 /* ---------- logo header ---------- */
@@ -72,14 +80,12 @@ header.logo-header{
     font-weight: 400;
     margin: 0;
     padding: 0;  
-    letter-spacing: 0.3vw;
     color: #660000;
 }
 .cover-header h2, .cover-header h3{
     font-family: var(--header-font-family);
     color: black;
     font-weight: 400;
-    letter-spacing: .3vw;;
     margin: 0;
 }
 

@@ -1,4 +1,6 @@
-/bottle-resizer/input_images/
-/bottle-resizer/output_images/
+.DS_Store
 
-.DS_STORE
+
+/bottle_resizer/input_images/*
+!/bottle_resizerinput_images/.gitkeep
+/bottle_resizer/output_images/

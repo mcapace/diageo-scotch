@@ -197,7 +197,10 @@ div.lines-left, div.lines-right{
     height: auto;
     box-sizing: border-box;
     padding: 5%;
-    padding-bottom: 3%
+    padding-bottom: 3%;
+}
+.section-2{
+    padding-bottom: 5%;
 }
 .banner-with-text{
     position: relative;
@@ -348,13 +351,39 @@ div.lines-left, div.lines-right{
     text-align: center;
     gap: 2vw;
 }
-.purchase-header{
+
+.purchase-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+
 .purchase .lines {
-    width: 100%
+    width: 100%;
+}
+
+.purchase-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* keep 4 per row for desktop */
+    justify-content: center;
+    gap: 4vw;
+    max-width: 1200px; /* prevents row from stretching too much */
+    margin: 0 auto;
+}
+
+.purchase-bottle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* keeps bottles “on the shelf” */
+    align-items: center;
+    width: 100%;
+}
+
+.purchase-bottle img {
+    display: block;
+    width: 100%;      /* fills the padded container width */
+    height: auto;     /* keeps aspect ratio intact */
+    object-fit: contain;
 }

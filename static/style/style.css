@@ -340,16 +340,17 @@ div.lines-left, div.lines-right{
     height: var(--line-width);
     border: none;
     background: black;
-    margin: 1% 5%;
     width: 100%;
+    margin: 1% 0;
 }
+
 .purchase {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 2vw;
+    gap: 3vw;
 }
 
 .purchase-header {
@@ -362,6 +363,7 @@ div.lines-left, div.lines-right{
 
 .purchase .lines {
     width: 100%;
+    margin: 0 5%;
 }
 
 .purchase-container {

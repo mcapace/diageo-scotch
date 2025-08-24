@@ -271,11 +271,11 @@ div.lines-left, div.lines-right{
 }
 
 .text-overlay-link:hover .link-text {
-  border-color: currentColor; /* underline fades in */
+    border-color: currentColor; /* underline fades in */
 }
 .link-text {
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.4s ease;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.4s ease;
 }
 .text-overlay-link:hover .right-pointing-arrow {
     transform: translateX(.5vw);
@@ -334,13 +334,13 @@ div.lines-left, div.lines-right{
 
 
 .section-8{
-    margin: 0 12.5%;
+    margin: 0 8%;
 }
 .section-8 hr{
     height: var(--line-width);
     border: none;
     background: black;
-    margin: 1% 0;
+    margin: 1% 5%;
     width: 100%;
 }
 .purchase {
@@ -368,8 +368,7 @@ div.lines-left, div.lines-right{
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* keep 4 per row for desktop */
     justify-content: center;
-    gap: 4vw;
-    max-width: 1200px; /* prevents row from stretching too much */
+    gap: 1vw;
     margin: 0 auto;
 }
 
@@ -386,4 +385,32 @@ div.lines-left, div.lines-right{
     width: 100%;      /* fills the padded container width */
     height: auto;     /* keeps aspect ratio intact */
     object-fit: contain;
+    padding: 1vw 2.5vw;
+    box-sizing: border-box;
+}
+
+/* lines between bottles */
+
+.purchase-bottle:not(:last-child) {
+    border-right: var(--line-width) solid black;
+}
+.purchase-bottle:not(:first-child) {
+    border-left: var(--line-width) solid black;
+}
+
+/* shop link */
+
+.purchase-bottle a{
+    color: var(--red-text);
+    text-decoration: none;
+    font-family: var(--header-font-family);
+    font-size: 2vw;
+    font-weight: 400;
+    letter-spacing: 0.1vw;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.4s ease;
+    line-height: normal;
+}
+.purchase-bottle a:hover {
+    border-color: currentColor;
 }

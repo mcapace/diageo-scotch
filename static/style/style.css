@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 
 
@@ -10,9 +11,10 @@
     --header-font-family: "DM Serif Display";
     --body-font-family: "Libre Baskerville";
     --text-overlay-font-family: "Lato";
-    --line-width: .1vw;
+    --line-width: 2px;
     --font-size-p: 1vw;
     --font-size-h3: 2.5vw;
+    --line-background: rgba(255, 255, 255, 0.546);
 }
 
 /* -------- Global Styles ----------*/
@@ -109,28 +111,22 @@ div.lines-left, div.lines-right{
     gap: .5rem;
 }
 .line-1, .line-2{
-    border: none;
+    all: unset;           
+    display: block;
     height: var(--line-width);
-    background-color: black;
+    background: #000;
     margin: 0;
 }
 .lines-left{
     align-items: flex-end;
 }
 
-/* lengths for left side */
-.lines-left .line-1 { 
+/* lengths for top line */
+.lines-left .line-1, .lines-right .line-1{ 
     width: 5vw;
 }
-.lines-left .line-2 { 
-    width: 10vw; 
-}
-
-/* lengths for right side */
-.lines-right .line-1 { 
-    width: 5vw; 
-}
-.lines-right .line-2 { 
+/* bottom line lengths */
+.lines-left .line-2, .lines-right .line-2 { 
     width: 10vw; 
 }
 
@@ -185,4 +181,77 @@ div.lines-left, div.lines-right{
     font-style: italic;
     font-weight: 400;
     padding-right: 30%;
+}
+
+/* section 2, 4, 6, 8 */
+
+.banner-with-text .banner-img{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5%;
+    display: block;
+}
+.banner-with-text{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.image-text-overlay-container {
+    position: absolute;
+    top: 18%;
+    left: 4%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+.image-text-overlay-container .logo{
+    width: 20vw;
+}
+.image-text-overlay-container h4{
+    font-family: var(--text-overlay-font-family);
+    font-size: 1.5vw;
+    font-style: normal;
+    color: white;
+    font-weight: 700;
+    line-height: 120%;
+    margin: 0;
+}
+.image-text-overlay-container hr{
+    width: 13.5vw;
+    align-self: flex-start;
+    margin: 0;
+    height: var(--line-width);
+    border: none;
+    background: var(--line-background);
+
+}
+.text-overlay-sans-logo {
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+    margin-left: 3.2vw;
+}
+.text-overlay-sans-logo a{
+    font-family: var(--text-overlay-font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: white;
+    text-decoration: none;
+    line-height: normal;
+}
+.right-pointing-arrow{
+    flex-shrink: 0;
+    color: white;
+    width: 1.5vw;
+    height: auto;
+}
+.text-overlay-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5vw;
 }

@@ -14,7 +14,7 @@
     --line-width: 2px;
     --font-size-p: 1vw;
     --font-size-h3: 2.5vw;
-    --line-background: rgba(255, 255, 255, 0.546);
+    --line-background-light: rgba(255, 255, 255, 0.546);
 }
 
 /* -------- Global Styles ----------*/
@@ -232,7 +232,7 @@ div.lines-left, div.lines-right{
     margin: 0;
     height: var(--line-width);
     border: none;
-    background: var(--line-background);
+    background: var(--line-background-light);
 
 }
 .text-overlay-sans-logo {
@@ -288,7 +288,7 @@ div.lines-left, div.lines-right{
     align-items: center;
     text-align: center;
 }
-.centered-text-with-banner h3{
+.centered-text-with-banner h3, .purchase-header h3{
     margin: 0;
     color: var(--red-text);
     font-weight: 400;
@@ -330,3 +330,31 @@ div.lines-left, div.lines-right{
 /* --------------  purchase section --------------  */
 
 
+.section-8{
+    margin: 0 12.5%;
+}
+.section-8 hr{
+    height: var(--line-width);
+    border: none;
+    background: black;
+    margin: 1% 0;
+    width: 100%;
+}
+.purchase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2vw;
+}
+.purchase-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.purchase .lines {
+    width: 100%
+}

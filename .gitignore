@@ -1,2 +1,4 @@
-/bottle-resizer/input_images/*
-/bottle-resizer/output_images/*
+/bottle-resizer/input_images/
+/bottle-resizer/output_images/
+
+.DS_STORE

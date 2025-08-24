@@ -43,7 +43,12 @@ h2{
     letter-spacing: .4vw;
     line-height: 5vw;
     font-family: var(--header-font-family);
-
+}
+h4{
+    font-size: 1.5vw;
+    letter-spacing: .1vw;
+    font-family: var(--header-font-family);
+    font-weight: 400;
 }
 img{
     display: block; 
@@ -274,21 +279,21 @@ div.lines-left, div.lines-right{
     transition: transform 0.4s ease;
 }
 
-/* -------------- section 5 styling-------------- */
+/* -------------- section 5, 7 styling (centered text)-------------- */
 
-.section-5 .section-content{
+.centered-text-with-banner .section-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.section-5 h3{
+.centered-text-with-banner h3{
     margin: 0;
     color: var(--red-text);
     font-weight: 400;
 }
-.section-5 p{
+.centered-text-with-banner p{
     font-family: var(--body-font-family);
     font-size: var(--font-size-p);
     line-height: 2vw;
@@ -297,7 +302,7 @@ div.lines-left, div.lines-right{
     font-weight: 400;
     font-style: normal;
 }
-.section-5 a{
+.centered-text-with-banner a{
     color: white;
     background-color: var(--red-text);
     text-decoration: none;
@@ -313,3 +318,15 @@ div.lines-left, div.lines-right{
     width: 100%;
     height: auto;
 }
+.section-7 h4{
+    font-style:italic;
+    line-height: normal;
+    margin: 1vw 0;
+}
+.section-7 a{
+    width: 12vw
+}
+
+/* --------------  purchase section --------------  */
+
+

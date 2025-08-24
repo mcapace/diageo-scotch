@@ -45,6 +45,9 @@ h2{
     font-family: var(--header-font-family);
 
 }
+img{
+    display: block; 
+}
 
 /* ---------- logo header ---------- */
 header.logo-header{
@@ -68,7 +71,6 @@ header.logo-header{
 }
 .cover-header .header-img-container img{
     width: 100%;
-    display: block;  /* removes bottom white space */    
 }
 .cover-header .header-content{
     position: absolute;
@@ -190,7 +192,6 @@ div.lines-left, div.lines-right{
     height: auto;
     box-sizing: border-box;
     padding: 5%;
-    display: block;
 }
 .banner-with-text{
     position: relative;

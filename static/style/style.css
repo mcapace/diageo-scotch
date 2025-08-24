@@ -185,13 +185,14 @@ div.lines-left, div.lines-right{
     padding-right: 30%;
 }
 
-/* section 2, 4, 6, 8 */
+/* --------------section 2, 4, 6, 8 (banners with logo and text link overlay) --------------*/
 
 .banner-with-text .banner-img{
     width: 100%;
     height: auto;
     box-sizing: border-box;
     padding: 5%;
+    padding-bottom: 3%
 }
 .banner-with-text{
     position: relative;
@@ -248,11 +249,67 @@ div.lines-left, div.lines-right{
     flex-shrink: 0;
     color: white;
     width: 1.5vw;
-    height: auto;
+    height: auto;  
+    margin-left: .5vw;
+
+    transition: transform 0.4s ease;
+
+
 }
 .text-overlay-link{
+    display: inline-flex;           
+    align-items: center;              
+    text-decoration: none;  
+}
+
+.text-overlay-link:hover .link-text {
+  border-color: currentColor; /* underline fades in */
+}
+.link-text {
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.4s ease;
+}
+.text-overlay-link:hover .right-pointing-arrow {
+    transform: translateX(.5vw);
+    transition: transform 0.4s ease;
+}
+
+/* -------------- section 5 styling-------------- */
+
+.section-5 .section-content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: .5vw;
+    text-align: center;
+}
+.section-5 h3{
+    margin: 0;
+    color: var(--red-text);
+    font-weight: 400;
+}
+.section-5 p{
+    font-family: var(--body-font-family);
+    font-size: var(--font-size-p);
+    line-height: 2vw;
+    padding: 0 22%;
+    margin: 1vw 0;
+    font-weight: 400;
+    font-style: normal;
+}
+.section-5 a{
+    color: white;
+    background-color: var(--red-text);
+    text-decoration: none;
+    width: fit-content;
+    padding: .75vw 1.5vw;
+    font-family: var(--header-font-family);
+    font-size: 1.5vw;
+    font-weight: 400;
+    letter-spacing: 0.2vw;
+    margin-bottom: 4vw;
+}
+.section-5 .section-5-img-banner{
+    width: 100%;
+    height: auto;
 }

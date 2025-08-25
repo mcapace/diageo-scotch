@@ -329,12 +329,11 @@ div.lines-left, div.lines-right{
 .purchase{
     margin: 0 8%;
 }
-.purchase hr{
+.article-lines hr{
     height: var(--line-width);
     border: none;
     background: black;
     width: 100%;
-    margin: 1% 0;
 }
 
 .purchase {
@@ -354,9 +353,9 @@ div.lines-left, div.lines-right{
     width: 100%;
 }
 
-.purchase .lines {
-    width: 100%;
-    margin: 0 5%;
+.article-lines {
+    margin: 5% 10%;
+    box-sizing: border-box;
 }
 
 .purchase-container {

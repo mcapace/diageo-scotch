@@ -1,0 +1,6 @@
+/* stack article cards vertically on resize */
+
+.articles-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5%;
+}

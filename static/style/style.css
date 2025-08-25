@@ -10,7 +10,7 @@
     --red-text: #800000;
     --header-font-family: "DM Serif Display";
     --body-font-family: "Libre Baskerville";
-    --text-overlay-font-family: "Lato";
+    --article-p-font-family: "Lato";
     --line-width: 2px;
     --font-size-p: 1.4vw;
     --left-text-p-size: 2vw;
@@ -329,12 +329,7 @@ div.lines-left, div.lines-right{
 .purchase{
     margin: 0 8%;
 }
-.article-lines hr{
-    height: var(--line-width);
-    border: none;
-    background: black;
-    width: 100%;
-}
+
 
 .purchase {
     display: flex;
@@ -353,10 +348,6 @@ div.lines-left, div.lines-right{
     width: 100%;
 }
 
-.article-lines {
-    margin: 5% 10%;
-    box-sizing: border-box;
-}
 
 .purchase-container {
     display: grid;
@@ -412,4 +403,99 @@ div.lines-left, div.lines-right{
 /* -------------- footer -------------- */
 .site-footer {
     height: 20vh;
+}
+/* article styling */
+
+.article-header h1{
+    font-family: var(--header-font-family);
+    color: black;
+    text-align: center;
+    margin: 5% 10% 5% 10%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 5vw;
+    letter-spacing: .2vw;
+}
+main.article {
+    margin: 0 10%;
+}
+.article section{
+    margin-bottom: 5%;
+}
+.article p{
+    color: #000;
+    font-family: var(--article-p-font-family);
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0;
+}
+
+.article h2, .site-footer-articles h2{
+    color: #000;
+    font-family: var(--header-font-family);
+    font-size: 3.5vw;
+    letter-spacing: 0.02vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 2%;
+}
+.article h4{
+    color: #000;
+    font-family: var(--article-p-font-family);
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0;
+}
+/* article footer styling */
+
+
+.article-lines {
+    margin: 7.5% 8%;
+    box-sizing: border-box;
+}
+.article-lines hr{
+    height: var(--line-width);
+    border: none;
+    background: black;
+    width: 100%;
+}
+
+
+.site-footer-articles {
+    margin: 5% 10%;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+}
+.site-footer-articles a h4{
+    color: #000;
+    font-family: var(--header-font-family);
+    font-size: 1.75vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+.site-footer-articles a{
+    text-decoration: none;
+}
+.site-footer-articles .article-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    gap: 1vw;
+    box-sizing: border-box;
+    padding: 0;
 }

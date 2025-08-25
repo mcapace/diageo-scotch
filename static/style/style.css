@@ -441,8 +441,7 @@ main.article {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0;
-    margin-bottom: 2%;
+    margin: 2% 0;
 }
 .article h4{
     color: #000;
@@ -452,6 +451,9 @@ main.article {
     font-weight: 700;
     line-height: 150%;
     margin: 0;
+}
+.article > p{
+    text-indent: 4rem;
 }
 /* article footer styling */
 

@@ -305,7 +305,7 @@ div.lines-left, div.lines-right{
     font-size: var(--font-size-p);
     line-height: 150%;
     letter-spacing: 0.1vw;
-    padding: 0 20%;
+    padding: 4% 20%;
     margin: 1vw 0;
     font-weight: 700;
     font-style: normal;

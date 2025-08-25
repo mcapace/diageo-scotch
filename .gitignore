@@ -4,3 +4,5 @@
 /bottle_resizer/input_images/*
 !/bottle_resizerinput_images/.gitkeep
 /bottle_resizer/output_images/
+
+venv/

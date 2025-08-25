@@ -12,8 +12,9 @@
     --body-font-family: "Libre Baskerville";
     --text-overlay-font-family: "Lato";
     --line-width: 2px;
-    --font-size-p: 1vw;
-    --font-size-h3: 2.5vw;
+    --font-size-p: 1.4vw;
+    --left-text-p-size: 2vw;
+    --font-size-h3: 3vw;
     --line-background-light: rgba(255, 255, 255, 0.546);
 }
 
@@ -162,15 +163,17 @@ div.lines-left, div.lines-right{
     padding: 10% 5% 5% 10%;
     display: flex;
     flex-direction: column;
+    align-self: center;
+    margin-top: -2vw;
 }
 .article-paragraph-with-image .section-content p{
     box-sizing: border-box;
     margin: 2.5% 0;
-    font-size: var(--font-size-p);
+    font-size: var(--left-text-p-size);
     font-family: var(--body-font-family);
-    line-height: 2vw;
+    line-height: 140%;
     font-weight: 400;
-    padding-right: 20%;
+    padding-right: 17.5%;
 
 }
 .article-paragraph-with-image .section-content a{
@@ -183,11 +186,17 @@ div.lines-left, div.lines-right{
     font-size: 1.5vw;
     font-weight: 400;
     letter-spacing: 0.2vw;
+    border-radius: 0.5vw;
+    transition: background-color 0.2s ease;
 }
-.section-3 .section-content p{
-    font-style: italic;
-    font-weight: 400;
-    padding-right: 30%;
+.article-paragraph-with-image a.recipes-button{
+    width: 12vw;
+    text-align: center;
+    
+}
+.article-paragraph-with-image a:hover{
+    background-color: #660000;
+    transition: background-color 0.2s ease;
 }
 
 /* --------------section 2, 4, 6, 8 (banners with logo and text link overlay) --------------*/
@@ -197,11 +206,8 @@ div.lines-left, div.lines-right{
     height: auto;
     box-sizing: border-box;
     padding: 5%;
-    padding-bottom: 3%;
 }
-.section-2{
-    padding-bottom: 5%;
-}
+
 .banner-with-text{
     position: relative;
     width: 100%;
@@ -216,21 +222,24 @@ div.lines-left, div.lines-right{
     justify-content: center;
     align-items: flex-start;
     text-align: left;
+    gap: .5vw;
+    margin-left: 5vw;
 }
 .image-text-overlay-container .logo{
-    width: 20vw;
+    width: 15vw;
 }
 .image-text-overlay-container h4{
-    font-family: var(--text-overlay-font-family);
-    font-size: 1.5vw;
+    font-family: var(--body-font-family);
+    font-size: 1.75vw;
     font-style: normal;
     color: white;
     font-weight: 700;
     line-height: 120%;
     margin: 0;
+    letter-spacing: .15vw;
 }
 .image-text-overlay-container hr{
-    width: 13.5vw;
+    width: 15vw;
     align-self: flex-start;
     margin: 0;
     height: var(--line-width);
@@ -238,20 +247,15 @@ div.lines-left, div.lines-right{
     background: var(--line-background-light);
 
 }
-.text-overlay-sans-logo {
-    display: flex;
-    flex-direction: column;
-    gap: .5vw;
-    margin-left: 3.2vw;
-}
-.text-overlay-sans-logo a{
-    font-family: var(--text-overlay-font-family);
-    font-style: italic;
+
+.image-text-overlay-container a{
+    font-family: var(--body-font-family);
     font-weight: 400;
     font-size: 1.2vw;
     color: white;
     text-decoration: none;
     line-height: normal;
+    letter-spacing: .15vw;
 }
 .right-pointing-arrow{
     flex-shrink: 0;
@@ -299,10 +303,11 @@ div.lines-left, div.lines-right{
 .centered-text-with-banner p{
     font-family: var(--body-font-family);
     font-size: var(--font-size-p);
-    line-height: 2vw;
-    padding: 0 22%;
+    line-height: 150%;
+    letter-spacing: 0.1vw;
+    padding: 0 20%;
     margin: 1vw 0;
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
 }
 .centered-text-with-banner a{
@@ -317,26 +322,14 @@ div.lines-left, div.lines-right{
     letter-spacing: 0.2vw;
     margin-bottom: 4vw;
 }
-.section-5 .section-5-img-banner{
-    width: 100%;
-    height: auto;
-}
-.section-7 h4{
-    font-style:italic;
-    line-height: normal;
-    margin: 1vw 0;
-}
-.section-7 a{
-    width: 12vw
-}
 
 /* --------------  purchase section --------------  */
 
 
-.section-8{
+.purchase{
     margin: 0 8%;
 }
-.section-8 hr{
+.purchase hr{
     height: var(--line-width);
     border: none;
     background: black;
@@ -412,7 +405,12 @@ div.lines-left, div.lines-right{
     border-bottom: 2px solid transparent;
     transition: border-color 0.4s ease;
     line-height: normal;
+    margin-bottom: 2vw;
 }
 .purchase-bottle a:hover {
     border-color: currentColor;
+}
+/* -------------- footer -------------- */
+.site-footer {
+    height: 20vh;
 }

@@ -452,8 +452,8 @@ main.article {
     line-height: 150%;
     margin: 0;
 }
-.article > p{
-    text-indent: 4rem;
+p.indent{
+    text-indent: 2rem;
 }
 /* article footer styling */
 

@@ -420,7 +420,7 @@ div.lines-left, div.lines-right{
 main.article {
     margin: 0 10%;
 }
-.article section{
+.article .subsection{
     margin-bottom: 5%;
 }
 .article p{
@@ -452,9 +452,18 @@ main.article {
     line-height: 150%;
     margin: 0;
 }
-p.indent{
-    text-indent: 2rem;
+.intro-section p{
+    text-indent: 1.5rem;
 }
+.italic{
+    font-style: italic;
+}
+.quote{
+    margin-top: 5%;
+}
+
+
+
 /* article footer styling */
 
 
@@ -500,10 +509,4 @@ p.indent{
     gap: 1vw;
     box-sizing: border-box;
     padding: 0;
-}
-.italic{
-    font-style: italic;
-}
-.quote{
-    margin-top: 5%;
 }

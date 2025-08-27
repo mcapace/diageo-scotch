@@ -12,9 +12,9 @@
     --body-font-family: "Libre Baskerville";
     --article-p-font-family: "Lato";
     --line-width: 2px;
-    --font-size-p: 1.4vw;
-    --left-text-p-size: 2vw;
-    --font-size-h3: 3vw;
+    --font-size-p: clamp(0.9rem, 1.2vw, 1.2rem);   
+    --left-text-p-size: clamp(1.1rem, 2vw, 1.6rem); 
+    --font-size-h3: clamp(1.5rem, 3vw, 2.5rem); 
     --line-background-light: rgba(255, 255, 255, 0.546);
 }
 
@@ -31,23 +31,23 @@ body{
 h1{
     font-family: var(--header-font-family);
     color: var(--red-text);
-    font-size: 8vw; 
-    letter-spacing: 0.3vw;  
+    font-size: clamp(2rem, 8vw, 5rem);
+    letter-spacing: clamp(0.05rem, 0.3vw, 0.25rem);
 }
 h3{
     font-size: var(--font-size-h3);
-    letter-spacing: .3vw;;
+    letter-spacing: clamp(0.05rem, 0.3vw, 0.2rem);
     font-family: var(--header-font-family);
 }
 h2{
-    font-size: 5vw;
-    letter-spacing: .4vw;
-    line-height: 5vw;
+    font-size: clamp(1.8rem, 5vw, 3.5rem); 
+    letter-spacing: clamp(0.05rem, 0.4vw, 0.3rem);
+    line-height: 1.2;
     font-family: var(--header-font-family);
 }
 h4{
-    font-size: 1.5vw;
-    letter-spacing: .1vw;
+    font-size: clamp(1rem, 1.5vw, 1.25rem); 
+    letter-spacing: clamp(0.02rem, 0.1vw, 0.08rem);
     font-family: var(--header-font-family);
     font-weight: 400;
 }
@@ -181,13 +181,13 @@ div.lines-left, div.lines-right{
     background-color: var(--red-text);
     text-decoration: none;
     width: fit-content;
-    padding: .75vw 1.5vw;
     font-family: var(--header-font-family);
-    font-size: 1.5vw;
     font-weight: 400;
-    letter-spacing: 0.2vw;
-    border-radius: 0.5vw;
     transition: background-color 0.2s ease;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    letter-spacing: clamp(0.05rem, 0.2vw, 0.15rem);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
 }
 .article-paragraph-with-image a.recipes-button{
     width: 12vw;
@@ -226,20 +226,22 @@ div.lines-left, div.lines-right{
     margin-left: 5vw;
 }
 .image-text-overlay-container .logo{
-    width: 15vw;
+    width: 100%;     
+    max-width: 200px;
+    height: auto;
 }
 .image-text-overlay-container h4{
     font-family: var(--body-font-family);
-    font-size: 1.75vw;
     font-style: normal;
     color: white;
     font-weight: 700;
     line-height: 120%;
     margin: 0;
-    letter-spacing: .15vw;
+    font-size: clamp(1rem, 1.75vw, 1.5rem);
+    letter-spacing: clamp(0.05rem, 0.15vw, 0.1rem);
 }
 .image-text-overlay-container hr{
-    width: 15vw;
+    width: 100%;
     align-self: flex-start;
     margin: 0;
     height: var(--line-width);
@@ -251,11 +253,11 @@ div.lines-left, div.lines-right{
 .image-text-overlay-container a{
     font-family: var(--body-font-family);
     font-weight: 400;
-    font-size: 1.2vw;
     color: white;
     text-decoration: none;
     line-height: normal;
-    letter-spacing: .15vw;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    letter-spacing: clamp(0.05rem, 0.15vw, 0.1rem);
 }
 .right-pointing-arrow{
     flex-shrink: 0;
@@ -315,12 +317,12 @@ div.lines-left, div.lines-right{
     background-color: var(--red-text);
     text-decoration: none;
     width: fit-content;
-    padding: .75vw 1.5vw;
     font-family: var(--header-font-family);
-    font-size: 1.5vw;
     font-weight: 400;
-    letter-spacing: 0.2vw;
     margin-bottom: 4vw;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    letter-spacing: clamp(0.05rem, 0.2vw, 0.15rem);
+    padding: 0.75rem 1.5rem;
 }
 
 /* --------------  purchase section --------------  */
@@ -389,9 +391,9 @@ div.lines-left, div.lines-right{
     color: var(--red-text);
     text-decoration: none;
     font-family: var(--header-font-family);
-    font-size: 2vw;
     font-weight: 400;
-    letter-spacing: 0.1vw;
+    font-size: clamp(1.2rem, 2vw, 1.75rem);
+    letter-spacing: clamp(0.05rem, 0.1vw, 0.1rem);
     border-bottom: 2px solid transparent;
     transition: border-color 0.4s ease;
     line-height: normal;
@@ -413,8 +415,8 @@ div.lines-left, div.lines-right{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    font-size: 5vw;
-    letter-spacing: .2vw;
+    font-size: clamp(2rem, 5vw, 3rem);
+    letter-spacing: clamp(0.05rem, 0.2vw, 0.15rem);
     margin: 0;
 }
 .article-header {
@@ -433,7 +435,7 @@ main.article {
 .article p{
     color: #000;
     font-family: var(--article-p-font-family);
-    font-size: 1.5vw;
+    font-size: var(--font-size-p);
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
@@ -443,7 +445,7 @@ main.article {
 .article h2, .site-footer-articles h2{
     color: #000;
     font-family: var(--header-font-family);
-    font-size: 3.5vw;
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
     letter-spacing: 0.02vw;
     font-style: normal;
     font-weight: 400;
@@ -453,7 +455,7 @@ main.article {
 .article h4, .article-header h4{
     color: #000;
     font-family: var(--article-p-font-family);
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
@@ -508,7 +510,7 @@ main.article {
 .site-footer-articles a h4{
     color: #000;
     font-family: var(--header-font-family);
-    font-size: 1.75vw;
+    font-size: clamp(1rem, 1.75vw, 1.4rem);
     font-style: normal;
     font-weight: 400;
     line-height: normal;

@@ -428,7 +428,7 @@ main.article {
     margin: 0 10%;
 }
 .article .subsection{
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
 }
 .article p{
     color: #000;
@@ -472,6 +472,12 @@ main.article {
     width: 50%;
     height: auto;
     margin: auto;
+}
+.article .recipe-list li{
+    font-size: var(--font-size-p);  
+    font-family: var(--article-p-font-family);
+    font-weight: 400;
+    line-height: 150%;
 }
 
 

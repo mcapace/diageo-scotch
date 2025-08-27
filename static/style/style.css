@@ -468,7 +468,11 @@ main.article {
 .quote{
     margin-top: 5%;
 }
-
+.article-img{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
 
 
 /* article footer styling */

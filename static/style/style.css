@@ -275,25 +275,25 @@ div.lines-left, div.lines-right{
     width: 1.5vw;
     height: auto;  
     margin-left: .5vw;
-
     transition: transform 0.4s ease;
-
-
 }
-.text-overlay-link{
+.text-overlay-link, .bottle-link{
     display: inline-flex;           
     align-items: center;              
     text-decoration: none;  
 }
 
-.text-overlay-link:hover .link-text {
+.text-overlay-link:hover .link-text, .bottle-link:hover .link-text {
     border-color: currentColor; /* underline fades in */
 }
 .link-text {
     border-bottom: 2px solid transparent;
     transition: border-color 0.4s ease;
 }
-.text-overlay-link:hover .right-pointing-arrow {
+.purchase-bottle .link-text {
+    border-bottom: 3px solid transparent;
+}
+.text-overlay-link:hover .right-pointing-arrow, .bottle-link:hover .right-pointing-arrow {
     transform: translateX(.5vw);
     transition: transform 0.4s ease;
 }
@@ -401,16 +401,26 @@ div.lines-left, div.lines-right{
     text-decoration: none;
     font-family: var(--header-font-family);
     font-weight: 400;
-    font-size: clamp(1.2rem, 2vw, 1.75rem);
+    font-size: var(--font-size-h3);
     letter-spacing: clamp(0.05rem, 0.1vw, 0.1rem);
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.4s ease;
     line-height: normal;
     margin-bottom: 2vw;
 }
-.purchase-bottle a:hover {
-    border-color: currentColor;
+
+
+/* purchase labels */
+.purchase-p{
+    color: #000;
+    text-align: center;
+    font-family: var(--body-font-family);
+    font-size: var(--font-size-p);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    margin: 5%;
 }
+
+
 /* -------------- footer -------------- */
 .site-footer {
     height: 20vh;

@@ -437,12 +437,12 @@ div.lines-left, div.lines-right{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(2rem, 6vw, 4rem);
     letter-spacing: clamp(0.05rem, 0.2vw, 0.15rem);
     margin: 0;
 }
 .article-header {
-    margin: 5% 10%;
+    margin: 2.5% 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -465,7 +465,7 @@ main.article {
 }
 
 .article h2, .site-footer-articles h2{
-    color: #000;
+    color: var(--red-text);
     font-family: var(--header-font-family);
     font-size: clamp(1.5rem, 3.5vw, 2.5rem);
     letter-spacing: 0.02vw;
@@ -473,6 +473,9 @@ main.article {
     font-weight: 400;
     line-height: normal;
     margin: 2% 0;
+}
+.site-footer-articles h2{
+    color: black;
 }
 .article h4, .article-header h4{
     color: #000;
@@ -529,6 +532,7 @@ main.article {
     grid-template-columns: repeat(3, 1fr);
     gap: 5%;
 }
+
 .site-footer-articles a h4{
     color: #000;
     font-family: var(--header-font-family);
@@ -552,3 +556,20 @@ main.article {
     padding: 0;
 }
 
+@media (max-width: 1400px) {
+  .articles-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.article-card img {
+  width: 100%;      
+  height: auto;    
+  display: block;   
+  object-fit: cover; 
+}

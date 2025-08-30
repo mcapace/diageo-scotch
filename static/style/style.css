@@ -313,7 +313,7 @@ div.lines-left, div.lines-right{
     color: var(--red-text);
     font-weight: 400;
 }
-.centered-text p{
+.centered-text-p{
     font-family: var(--body-font-family);
     font-size: var(--font-size-p);
     line-height: 175%;
@@ -418,6 +418,9 @@ div.lines-left, div.lines-right{
     font-weight: 400;
     line-height: 150%; 
     margin: 5%;
+}
+.purchase .centered-text-p{
+    font-weight: 400;
 }
 
 

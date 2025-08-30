@@ -12,8 +12,7 @@
     --body-font-family: "Libre Baskerville";
     --article-p-font-family: "Lato";
     --line-width: 2px;
-    --font-size-p: clamp(0.9rem, 1.2vw, 1.2rem);   
-    --left-text-p-size: clamp(1.1rem, 2vw, 1.6rem); 
+    --font-size-p: clamp(1.1rem, 2vw, 1.6rem);   
     --font-size-h3: clamp(1.5rem, 3vw, 2.5rem); 
     --line-background-light: rgba(255, 255, 255, 0.546);
 }
@@ -64,9 +63,12 @@ header.logo-header{
     height:fit-content;
     position: relative;
 }
+.logo-header a{
+    width: 20%;
+    padding: 2.5%;
+}
 .logo-header img{
-    width: 10%;
-    padding: 2rem;
+    width: 100%;
 }
 
 /* ---------- cover ---------- */
@@ -97,11 +99,20 @@ header.logo-header{
     margin: 0;
     padding: 0;  
     color: #660000;
+    font-size: 8vw; 
+    letter-spacing: 0.3vw;
 }
 .cover-header h2, .cover-header h3{
     color: black;
     font-weight: 400;
     margin: 0;
+    font-size: 5vw;
+    letter-spacing: .4vw;
+    line-height: 5vw;
+}
+.cover-header h3{
+    font-size: 3vw;
+    letter-spacing: .3vw;
 }
 
 /* lines in header */
@@ -169,12 +180,11 @@ div.lines-left, div.lines-right{
 .article-paragraph-with-image .section-content p{
     box-sizing: border-box;
     margin: 2.5% 0;
-    font-size: var(--left-text-p-size);
+    font-size: var(--font-size-p);
     font-family: var(--body-font-family);
-    line-height: 140%;
+    line-height: 150%;
     font-weight: 400;
     padding-right: 17.5%;
-
 }
 .article-paragraph-with-image .section-content a{
     color: white;
@@ -290,29 +300,28 @@ div.lines-left, div.lines-right{
 
 /* -------------- section 5, 7 styling (centered text)-------------- */
 
-.centered-text-with-banner .section-content{
+.centered-text .section-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
+    margin: 5% 20%;
 }
-.centered-text-with-banner h3, .purchase-header h3{
+.centered-text h3, .purchase-header h3{
     margin: 0;
     color: var(--red-text);
     font-weight: 400;
 }
-.centered-text-with-banner p{
+.centered-text p{
     font-family: var(--body-font-family);
     font-size: var(--font-size-p);
-    line-height: 150%;
+    line-height: 175%;
     letter-spacing: 0.1vw;
-    padding: 4% 20%;
-    margin: 1vw 0;
     font-weight: 700;
     font-style: normal;
 }
-.centered-text-with-banner a{
+.centered-text a{
     color: white;
     background-color: var(--red-text);
     text-decoration: none;
@@ -529,3 +538,4 @@ main.article {
     box-sizing: border-box;
     padding: 0;
 }
+

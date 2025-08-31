@@ -436,7 +436,7 @@ div.lines-left, div.lines-right{
     text-align: center;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 120%;
     font-size: clamp(2rem, 6vw, 4rem);
     letter-spacing: clamp(0.05rem, 0.2vw, 0.15rem);
     margin: 0;
@@ -490,12 +490,16 @@ main.article {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    margin: 0;
+    text-align: center;
+}
+.article h4{
     margin-top: 2.5%;
 }
 .article h4:first-of-type{
     margin: 0;
 }
-.intro-section p{
+.intro-section p, .quote .block-quote{
     font-family: var(--body-font-family);
     font-weight: 400;
     line-height: 180%;
@@ -508,8 +512,7 @@ main.article {
     margin-top: 5%;
 }
 .quote h2{
-    font-size: clamp(1.75rem, 4vw, 3.5rem);
-    letter-spacing: clamp(.10rem, .10vw, .5rem);
+    letter-spacing: clamp(.05rem, .10vw, .5rem);
 }
 .article-img{
     width: 50%;
@@ -540,13 +543,13 @@ main.article {
 
 
 .site-footer-articles {
-    margin: 5% 10%;
+    margin: 5% 15%;
 }
 
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5%;
+    gap: 2rem;
 }
 
 .site-footer-articles a h4{

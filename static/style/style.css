@@ -442,7 +442,7 @@ div.lines-left, div.lines-right{
     margin: 0;
 }
 .article-header {
-    margin: 2.5% 10%;
+    margin: 2.5% 10% 1% 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -467,33 +467,41 @@ main.article {
 .article h2, .site-footer-articles h2{
     color: var(--red-text);
     font-family: var(--header-font-family);
-    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+    font-size: clamp(1.75rem, 4vw, 3rem);
     letter-spacing: 0.02vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 2% 0;
+    margin: 2% 0 0 0;
 }
 .site-footer-articles h2{
     color: black;
+    margin-bottom: 2.5%;
 }
 .article h4, .article-header h4{
     color: #000;
-    font-family: var(--article-p-font-family);
-    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-family: var(--body-font-family);
+    font-size: clamp(1.5rem, 1.75vw, 1.75rem);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 150%;
+    margin-top: 2.5%;
+}
+.article h4:first-of-type{
     margin: 0;
 }
 .intro-section p{
     text-indent: 1.5rem;
 }
-.italic{
+.article .italic{
     font-style: italic;
 }
 .quote{
     margin-top: 5%;
+}
+.quote h2{
+    font-size: clamp(1.75rem, 4vw, 3.5rem);
+    letter-spacing: clamp(.10rem, .10vw, .5rem);
 }
 .article-img{
     width: 50%;

@@ -491,6 +491,8 @@ main.article {
     font-weight: 400;
     line-height: 150%;
     margin: 0;
+}
+.article-header h4{
     text-align: center;
 }
 .article h4{
@@ -525,7 +527,15 @@ main.article {
     font-weight: 400;
     line-height: 150%;
 }
-
+.recipe-list{
+    margin: 0;
+    margin-left: 1.5rem;
+    padding-left: 0.1rem;
+    list-style-position: outside;
+}
+ul li{
+    padding-left: 0;
+}
 
 /* article footer styling */
 
@@ -538,6 +548,16 @@ main.article {
     height: var(--line-width);
     border: none;
     background: black;
+    width: 100%;
+}
+.article-lines.page-breaker{
+    position: relative;
+    left: -10%;                      /* escape main's left margin */
+    width: calc(100% + 20%);         /* add back left + right margins */
+    box-sizing: border-box;
+    margin: 5% 0;
+}
+.page-breaker hr{
     width: 100%;
 }
 

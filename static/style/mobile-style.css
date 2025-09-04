@@ -4,3 +4,19 @@
     grid-template-columns: 1fr;
     gap: 2.5%;
 }
+
+/* undoes parallax */
+@media (max-width: 767px) {
+    .parallax-container {
+        height: auto;
+        overflow: visible;
+    }
+    .parallax-container .banner-img {
+        position: relative;
+        transform: none !important;
+        min-height: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-width: 0 !important;
+    }
+}

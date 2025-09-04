@@ -611,3 +611,34 @@ ul li{
   display: block;   
   object-fit: cover; 
 }
+
+/* parallax */
+/* parallax the small images at right */
+.parallax-container.small-parallax {
+    height: 30vw;
+    position: relative;
+    overflow: hidden;
+}
+/* parallax the header images at top */
+.parallax-container.header-parallax {
+    height: 80vw;
+    position: relative;
+    overflow: hidden;
+}
+@media (min-width: 768px) {
+    .parallax-container img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: auto;
+        min-width: 100%;    
+        width: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        will-change: transform;
+        z-index: 0;
+        max-width: none;
+    }
+}
+
+

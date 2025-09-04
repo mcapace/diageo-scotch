@@ -1,3 +1,8 @@
+/* mobile overrides */
+:root {
+    --font-size-h3: clamp(2rem, 4vw, 4rem);
+}
+
 /* stack article cards vertically on resize */
 
 .articles-grid {
@@ -10,7 +15,7 @@
     height: 100%;
     overflow: visible;
 }
-.parallax-container img {
+.parallax-container .parallax-item {
     position: relative;
     transform: none !important;
     min-height: 0 !important;
@@ -29,7 +34,62 @@
 .article-paragraph-with-image{
     display: flex;
     flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
 }
-.article-paragraph-image {
-    
+.article-paragraph-with-image .section-content{
+    padding: 0;
+    margin: 5% 10%;
+    align-self: flex-start;
+}
+
+.article-paragraph-with-image .section-content p{
+    padding-right: 0;
+}
+
+/* logo overlay styling */
+.image-text-overlay-container .logo{
+    width: 80%;
+}
+.image-text-overlay-container{
+    top: 15%;
+    left: 5%;
+    gap: 1vw;
+}
+.image-text-overlay-container hr{
+    width: 80%;
+}
+
+/* purchase restyling*/
+
+.purchase-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 ;
+}
+
+.purchase-bottle:not(:last-child) {
+    border: none;
+}
+.purchase-bottle:not(:first-child) {
+    border: none;
+}
+.desktop-only{
+    display: none;
+}
+.purchase-bottle img{
+    width: 30vw;
+}
+.horizontal-lines hr{
+    background-color: black;
+    height: 1px;
+    width: 80vw;
+    margin: 1%;
+}
+p.purchase-p{
+    margin: 2.5%;
 }

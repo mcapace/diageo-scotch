@@ -198,11 +198,7 @@ div.lines-left, div.lines-right{
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
 }
-.article-paragraph-with-image a.recipes-button{
-    width: 12vw;
-    text-align: center;
-    
-}
+
 .article-paragraph-with-image a:hover{
     background-color: #660000;
     transition: background-color 0.2s ease;
@@ -620,7 +616,7 @@ ul li{
 }
 /* parallax the small images at right */
 .parallax-container.small-parallax {
-    height: 30vw;
+    height: 0vw;
 }
 /* parallax the header images at top */
 .parallax-container.header-parallax {
@@ -642,5 +638,9 @@ ul li{
         max-width: none;
     }
 }
+/* mobile stuff gone */
 
+.mobile-only{
+    display: none;
+}
 

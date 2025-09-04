@@ -168,7 +168,6 @@ div.lines-left, div.lines-right{
     font-style: normal;
     line-height: normal;
     margin: 0;
-
 }
 .article-paragraph-with-image .section-content{
     padding: 10% 5% 5% 10%;
@@ -467,7 +466,7 @@ main.article {
 .article h2, .site-footer-articles h2{
     color: var(--red-text);
     font-family: var(--header-font-family);
-    font-size: clamp(1.75rem, 4vw, 3rem);
+    font-size: clamp(1.5rem, 3vw, 2.75rem);
     letter-spacing: 0.02vw;
     font-style: normal;
     font-weight: 400;
@@ -486,7 +485,7 @@ main.article {
 .article h4, .article-header h4{
     color: #000;
     font-family: var(--body-font-family);
-    font-size: clamp(1.5rem, 1.75vw, 1.75rem);
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
     font-style: normal;
     font-weight: 400;
     line-height: 150%;

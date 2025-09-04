@@ -624,7 +624,7 @@ ul li{
 }
 /* parallax the header images at top */
 .parallax-container.header-parallax {
-    height: 40vw;
+    height: 35vw;
 
 }
 @media (min-width: 768px) {

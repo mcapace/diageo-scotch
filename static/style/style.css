@@ -613,17 +613,19 @@ ul li{
 }
 
 /* parallax */
-/* parallax the small images at right */
-.parallax-container.small-parallax {
-    height: 30vw;
+
+.parallax-container {
     position: relative;
     overflow: hidden;
 }
+/* parallax the small images at right */
+.parallax-container.small-parallax {
+    height: 20vw;
+}
 /* parallax the header images at top */
 .parallax-container.header-parallax {
-    height: 80vw;
-    position: relative;
-    overflow: hidden;
+    height: 40vw;
+
 }
 @media (min-width: 768px) {
     .parallax-container img {

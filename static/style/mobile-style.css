@@ -93,3 +93,9 @@
 p.purchase-p{
     margin: 2.5%;
 }
+.mobile-only{
+    display: initial;
+}
+a.bottle-link{
+    margin-bottom: 0;
+}

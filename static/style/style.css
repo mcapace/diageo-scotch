@@ -620,7 +620,7 @@ ul li{
 }
 /* parallax the small images at right */
 .parallax-container.small-parallax {
-    height: 20vw;
+    height: 30vw;
 }
 /* parallax the header images at top */
 .parallax-container.header-parallax {

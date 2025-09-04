@@ -5,18 +5,31 @@
     gap: 2.5%;
 }
 
-/* undoes parallax */
-@media (max-width: 767px) {
-    .parallax-container {
-        height: auto;
-        overflow: visible;
-    }
-    .parallax-container .banner-img {
-        position: relative;
-        transform: none !important;
-        min-height: 0 !important;
-        width: 100% !important;
-        height: auto !important;
-        min-width: 0 !important;
-    }
+/* undo parallax for mobile */
+.parallax-container.small-parallax, .parallax-container.header-parallax {
+    height: 100%;
+    overflow: visible;
+}
+.parallax-container img {
+    position: relative;
+    transform: none !important;
+    min-height: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    min-width: 0 !important;
+}
+
+/* top paragraph of landing */
+.centered-text .section-content{
+    margin: 5% 10%;
+}
+
+/* reorder left/right image section */
+
+.article-paragraph-with-image{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.article-paragraph-image {
+    
 }

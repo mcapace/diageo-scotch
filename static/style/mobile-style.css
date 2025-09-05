@@ -3,13 +3,6 @@
     --font-size-h3: clamp(2rem, 4vw, 4rem);
 }
 
-/* stack article cards vertically on resize */
-
-.articles-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5%;
-}
-
 /* undo parallax for mobile */
 .parallax-container.small-parallax, .parallax-container.header-parallax {
     height: 100%;

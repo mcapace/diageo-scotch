@@ -92,6 +92,11 @@ p.purchase-p{
 a.bottle-link{
     margin-bottom: 0;
 }
+.purchase-here{
+    width: fit-content;
+    padding: 2.5%;
+    padding-left: 0;
+}
 
 /* articles */
 
@@ -114,10 +119,15 @@ footer.site-footer-articles{
 /* article footer */
 
 .articles-grid {
-    grid-template-columns: (2, 1fr)
+    grid-template-columns: (2, 1fr);
+    gap: 1vw;
 }
 @media (max-width: 500px) {
     .articles-grid {
         grid-template-columns: 1fr;
     }
+}
+.articles-grid a{
+    box-sizing: border-box;
+    padding: 5%;
 }

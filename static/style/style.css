@@ -537,7 +537,7 @@ ul li{
 
 
 .article-lines {
-    margin: 7.5% 8%;
+    margin: 5% 8%;
     box-sizing: border-box;
 }
 .article-lines hr{
@@ -592,16 +592,11 @@ ul li{
 }
 
 @media (max-width: 1400px) {
-  .articles-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media (max-width: 900px) {
-  .articles-grid {
-    grid-template-columns: 1fr;
-  }
-}
 .article-card img {
   width: 100%;      
   height: auto;    

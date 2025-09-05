@@ -182,7 +182,8 @@ div.lines-left, div.lines-right{
     font-size: var(--font-size-p);
     font-family: var(--body-font-family);
     line-height: 150%;
-    font-weight: 400;
+    letter-spacing: clamp(0.05rem, 0.15vw, 0.1rem);
+    font-weight: 700;
     padding-right: 17.5%;
 }
 .article-paragraph-with-image .section-content a{
@@ -312,7 +313,7 @@ div.lines-left, div.lines-right{
     font-family: var(--body-font-family);
     font-size: var(--font-size-p);
     line-height: 175%;
-    letter-spacing: 0.1vw;
+    letter-spacing: clamp(0.05rem, 0.15vw, 0.1rem);
     font-weight: 700;
     font-style: normal;
 }
@@ -432,7 +433,7 @@ div.lines-left, div.lines-right{
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-    font-size: clamp(2rem, 6vw, 4rem);
+    font-size: clamp(1.5rem, 5vw, 3rem);
     letter-spacing: clamp(0.05rem, 0.2vw, 0.15rem);
     margin: 0;
 }
@@ -462,7 +463,7 @@ main.article {
 .article h2, .site-footer-articles h2{
     color: var(--red-text);
     font-family: var(--header-font-family);
-    font-size: clamp(1.5rem, 3vw, 2.75rem);
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
     letter-spacing: 0.02vw;
     font-style: normal;
     font-weight: 400;
@@ -476,14 +477,14 @@ main.article {
 .purchase-here h2{
     color: black;
     text-decoration: underline;
-    text-decoration-thickness: .3vw;
+    
 }
 .article h4, .article-header h4{
     color: #000;
     font-family: var(--body-font-family);
-    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    font-size: var(--font-size-p);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 150%;
     margin: 0;
 }
@@ -498,7 +499,7 @@ main.article {
 }
 .intro-section p, .quote .block-quote{
     font-family: var(--body-font-family);
-    font-weight: 400;
+    font-weight: 700;
     line-height: 180%;
     letter-spacing: clamp(0.1rem, .15vw, .25rem);
 }
@@ -616,11 +617,11 @@ ul li{
 }
 /* parallax the small images at right */
 .parallax-container.small-parallax {
-    height: 0vw;
+    height: 30vw;
 }
 /* parallax the header images at top */
 .parallax-container.header-parallax {
-    height: 35vw;
+    height: 50vw;
 
 }
 @media (min-width: 768px) {
@@ -643,4 +644,5 @@ ul li{
 .mobile-only{
     display: none;
 }
+
 

@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	
 	(function () {
 		const BREAKPOINT = 768; // desktop when parallax active
-		const MOTION_INTENSITY = 1; // 0-1, lower = subtler movement (reduce to show more of image)
+		const MOTION_INTENSITY = 0.55; // 0-1, lower = subtler movement (reduce to show more of image)
 		const containers = Array.from(document.querySelectorAll('.parallax-container'));
 		if (!containers.length) return;
 	

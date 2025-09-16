@@ -640,4 +640,9 @@ ul li{
     display: none;
 }
 
+p.legal{
+    margin-top: 3vw;
+    font-size: clamp(.5rem, .75vw, 1.5rem);
+    font-style: italic;
+}
 

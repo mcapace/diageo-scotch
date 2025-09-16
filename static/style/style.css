@@ -506,9 +506,7 @@ main.article {
 .article .italic{
     font-style: italic;
 }
-.quote{
-    margin-top: 5%;
-}
+
 .quote h2{
     letter-spacing: clamp(.05rem, .10vw, .5rem);
 }

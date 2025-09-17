@@ -652,6 +652,7 @@ footer.wafooter{
     background-color: var(--tan-background);
     margin: 0;
     font-family: var(--article-p-font-family);
+    margin-top: 3%;
 }
 footer.wafooter p {
     margin: 0;

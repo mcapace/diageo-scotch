@@ -30,7 +30,7 @@ body{
 h1{
     font-family: var(--header-font-family);
     color: var(--red-text);
-    font-size: clamp(2rem, 8vw, 5rem);
+    font-size: clamp(2.5rem, 8vw, 5rem);
     letter-spacing: clamp(0.05rem, 0.3vw, 0.25rem);
 }
 h3{
@@ -464,7 +464,7 @@ main.article {
     color: var(--red-text);
     font-family: var(--header-font-family);
     font-size: clamp(1.5rem, 2vw, 2rem);
-    letter-spacing: 0.02vw;
+    letter-spacing: 0vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -669,7 +669,7 @@ footer.wafooter a:hover {
     color: var(--red-text);
     font-family: var(--header-font-family);
     font-size: clamp(1.5rem, 2vw, 2rem);
-    letter-spacing: 0.02vw;
+    letter-spacing: 0vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

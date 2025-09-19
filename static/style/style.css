@@ -666,12 +666,5 @@ footer.wafooter a:hover {
     text-decoration: underline;
 }
 .article-header h4{
-    color: var(--red-text);
-    font-family: var(--header-font-family);
-    font-size: clamp(1.5rem, 2vw, 2rem);
-    letter-spacing: 0vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    
+    display: none;
 }

@@ -3,6 +3,11 @@
     --font-size-h3: clamp(2rem, 4vw, 4rem);
 }
 
+/* logo larger on mobile */
+.logo-header a {
+    width: 30vw
+}
+
 /* undo parallax for mobile */
 .parallax-container.small-parallax, .parallax-container.header-parallax {
     height: 100%;

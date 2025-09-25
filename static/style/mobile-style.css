@@ -144,6 +144,9 @@ footer.site-footer-articles{
     line-height: 100%;
 }
 
+.article-header h1{
+    font-size: var(--font-size-h3);
+}
 /* arrows larger on mobile */
 .right-pointing-arrow {
     width: clamp(1rem, 4vw,1rem);

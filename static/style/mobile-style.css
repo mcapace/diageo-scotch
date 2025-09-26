@@ -96,6 +96,9 @@ p.purchase-p{
 .mobile-only{
     display: initial;
 }
+.mobile-off{
+    display: none !important;
+}
 a.bottle-link{
     margin-bottom: 0;
 }

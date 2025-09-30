@@ -668,3 +668,20 @@ footer.wafooter a:hover {
 .article-header h4{
     display: none;
 }
+.special-feature p{
+    font-family: var(--article-p-font-family);
+    color: black;
+    background-color: var(--tan-background);
+    font-size: clamp(.5rem, 1vw, 1rem);
+    padding: .5vw .75vw;
+    margin: 0;
+    margin-left: auto;
+    width: fit-content;
+}
+.special-feature{
+    margin: 0;
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    background-color: var(--tan-background);
+}

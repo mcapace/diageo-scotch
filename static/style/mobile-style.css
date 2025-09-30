@@ -160,3 +160,7 @@ footer.site-footer-articles{
     margin-left: 1.5vw;
     margin-top: -0.5vw;
 }
+
+.special-feature p {
+    font-size: clamp(.4rem, 1vw, 1rem);
+}

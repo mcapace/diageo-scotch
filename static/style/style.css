@@ -450,7 +450,7 @@ main.article {
 .article .subsection{
     margin-bottom: 2.5%;
 }
-.article p, .landing-page-diageo .quote p{
+.article p, p.landing-page-quote-attribution{
     color: #000;
     font-family: var(--article-p-font-family);
     font-size: var(--font-size-p);
